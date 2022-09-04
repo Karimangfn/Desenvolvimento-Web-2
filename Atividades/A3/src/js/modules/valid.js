@@ -51,8 +51,6 @@ export default function checkInputs() {
     //Validação CPF
     if (cpfValue === '') {
         cpf.classList.add("errorInput")
-    } else if (cpfValue < 3) {
-        cpf.classList.add("errorInput")
     } else {
         cpf.classList.remove("errorInput")
     }
