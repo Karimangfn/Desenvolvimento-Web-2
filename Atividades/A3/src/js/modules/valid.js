@@ -36,7 +36,6 @@ export default function checkInputs() {
     const emailValue = email.value.trim()
     const foneValue = fone.value.trim()
     const cepValue = cep.value.trim()
-    console.log(cepTamanho)
 
     //Validação Nome
     if (nomeValue === '') {
