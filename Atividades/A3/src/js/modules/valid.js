@@ -81,7 +81,7 @@ export const valids = {
             return false;
         }
         if (value.length < 9) {
-            return false; // CEP tem ue ter no minimo 9 caracters contanto o traço no formato XXXXX-XXX
+            return false; // CEP tem que ter no minimo 9 caracters contanto o traço no formato XXXXX-XXX
         } else {
             return true;
         }
