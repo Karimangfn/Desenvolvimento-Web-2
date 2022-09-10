@@ -56,7 +56,7 @@ export const valids = {
         if (value == '') {
             return false;
         }
-        else if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 || (email.value.indexOf(".")) - (email.value.indexOf("@")) == 1) {
+        else if (value.indexOf("@") == -1 || value.indexOf(".") == -1 || (value.indexOf(".")) - (value.indexOf("@")) == 1) {
             return false; //Email tem que estar no formato algumacoisa@algumacoisa.algumacoisa
         } else {
             return true;
