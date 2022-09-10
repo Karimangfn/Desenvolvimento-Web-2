@@ -13,8 +13,7 @@ export const valids = {
             return true;
         }
     },
-
-
+    
     date(value) {
         //Validação Data de Aniversario
         if (value == '') {
