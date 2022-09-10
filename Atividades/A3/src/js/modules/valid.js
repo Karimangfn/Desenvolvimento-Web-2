@@ -1,91 +1,89 @@
-const button = document.getElementById('button')
-const nome = document.getElementById('nome')
-const cpf = document.getElementById('cpf')
-const dt_nasc = document.getElementById('dt_nasc')
-const email = document.getElementById('email')
-const fone = document.getElementById('fone')
-const cep = document.getElementById('cep')
-
-button.addEventListener('click', (e) => {
-    e.preventDefault()
-
-    checkInputs()
-})
-
-
-export class variavelSaida {
-    constructor(nomeValue, cpfValue, dt_nascValue, emailValue, foneValue, cepValue) {
-        if (nomeValue != '' && cpfValue != '' && dt_nascValue != '' && emailValue != '' && foneValue != '' && cepValue != '') {
-            alert('Dados do Cadastro: ' + '\n' + 'Nome: ' + nomeValue + '\n' + 'CPF: ' + cpfValue + '\n' + 'Data de Nascimento: '
-                + dt_nascValue + '\n' + 'Email: ' + emailValue + '\n' + 'Telefone: ' + foneValue + '\n' + 'CEP: ' + cepValue + '\n\n' +
-                'Obrigado pelo Cadastro!')
+export const valids = {
+    nome(value) {
+        //Validação Nome
+        if (value == '') {
+            return false;
+        }
+        if (value.length < 4) {
+            return false; //Nome tem que ter no minimo 4 Letras
+        }
+        if (!value.match(/[a-zA-Z]/)) {
+            return false; //Nome não pode conter numeros
         } else {
-            alert('Dados do Cadastro: ' + '\n' + 'Nome: ' + nomeValue + '\n' + 'CPF: ' + cpfValue + '\n' + 'Data de Nascimento: '
-                + dt_nascValue + '\n' + 'Email: ' + emailValue + '\n' + 'Telefone: ' + foneValue + '\n' + 'CEP: ' + cepValue + '\n\n' +
-                'Preencha todos os Campos!')
+            return true;
+        }
+    },
+
+
+    date(value) {
+        //Validação Data de Aniversario
+        if (value == '') {
+            return false;
+        }
+        if (value.length < 10) {
+            return false; //Aniversario tem que ter no minimo 10 Caracteres (contando as barras)
+        }
+        const data = value.split('/');
+
+        if (data[0] < 1 || data[0] > 31) {
+            return false; //Impede que uma data com menos de 0 e maior que 31 seja posta
+        }
+
+        if (data[1] < 1 || data[1] > 12) {
+            return false; //Impede que um mes com menos de 1 e maior que 12 seja posta
+        }
+        if (data[2] < 1900 || data[2] > 2100) {
+            return false; //Só anos entre 1900 a 2100 são validos
+        } else {
+            return true;
+        }
+    },
+
+    cpf(value) {
+        //Validação CPF
+        if (value == '') {
+            return false;
+        }
+        if (value.length < 14) {
+            return false;  // CPF tem que ter no minimo 14 caracteres contando os 2 pontos e o traço
+        } else {
+            return true;
+        }
+    },
+
+    email(value) {
+        //Validação Email
+        if (value == '') {
+            return false;
+        }
+        else if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 || (email.value.indexOf(".")) - (email.value.indexOf("@")) == 1) {
+            return false; //Email tem que estar no formato algumacoisa@algumacoisa.algumacoisa
+        } else {
+            return true;
+        }
+    },
+
+    fone(value) {
+        //Validação Telefone
+        if (value == '') {
+            return false;
+        }
+        if (value.length < 14) {
+            return false; // Telefone tem que ter no minimo 14 caracteres para telefone residencial formato XXXX-XXXX ou celular XXXXX-XXXX
+        } else {
+            return true;
+        }
+    },
+
+    cep(value) {
+        //Validação CEP
+        if (value == '') {
+            return false;
+        }
+        if (value.length < 9) {
+            return false; // CEP tem ue ter no minimo 9 caracters contanto o traço no formato XXXXX-XXX
+        } else {
+            return true;
         }
     }
-}
-
-
-export default function checkInputs() {
-    const nomeValue = nome.value.trim()
-    const nomeTamanho = nome.value.length
-    const cpfValue = cpf.value.trim()
-    const dt_nascValue = dt_nasc.value.trim()
-    const emailValue = email.value.trim()
-    const foneValue = fone.value.trim()
-    const cepValue = cep.value.trim()
-
-    //Validação Nome
-    if (nomeValue === '') {
-        nome.classList.add("errorInput")
-    } else if (nomeTamanho < 3) { //Nomes tem que ter no minimo 3 letras
-        nome.classList.add("errorInput")
-    } else if (!nomeValue.match(/[a-zA-Z]/)) { //Nomes não podem conter Numeros
-        nome.classList.add("errorInput")
-    } else {
-        nome.classList.remove("errorInput")
-    }
-
-    //Validação CPF
-    if (cpfValue === '') {
-        cpf.classList.add("errorInput")
-    } else {
-        cpf.classList.remove("errorInput")
-    }
-
-    //Validação Data de Nascimento
-    if (dt_nascValue === '') {
-        dt_nasc.classList.add("errorInput")
-    } else {
-        dt_nasc.classList.remove("errorInput")
-    }
-
-    //Validação Email
-    if (emailValue === '') {
-        email.classList.add("errorInput")
-    }
-    else if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 || (email.value.indexOf(".")) - (email.value.indexOf("@")) == 1) {
-        email.classList.add("errorInput") //Email tem que estar no formato algumacoisa@algumacoisa.algumacoisa
-    } else {
-        email.classList.remove("errorInput")
-    }
-
-    //Validação Telefone
-    if (foneValue === '') {
-        fone.classList.add("errorInput")
-    } else {
-        fone.classList.remove("errorInput")
-    }
-
-    //Validação CEP
-    if (cepValue === '') {
-        cep.classList.add("errorInput")
-    } else {
-        cep.classList.remove("errorInput")
-    }
-
-    new variavelSaida(nomeValue, cpfValue, dt_nascValue, emailValue, foneValue, cepValue)
-
 }
