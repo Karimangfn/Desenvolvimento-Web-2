@@ -69,7 +69,7 @@ export const valids = {
             return false;
         }
         if (value.length < 14) {
-            return false; // Telefone tem que ter no minimo 14 caracteres para telefone residencial formato XXXX-XXXX ou celular XXXXX-XXXX
+            return false; // Telefone tem que ter no minimo 14 caracteres para telefone residencial formato (XX)XXXX-XXXX ou celular (XX)XXXXX-XXXX
         } else {
             return true;
         }
