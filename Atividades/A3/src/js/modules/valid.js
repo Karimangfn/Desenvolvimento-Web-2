@@ -26,7 +26,7 @@ export const valids = {
         const data = value.split('/');
 
         if (data[0] < 1 || data[0] > 31) {
-            return false; //Impede que uma data com menos de 0 e maior que 31 seja posta
+            return false; //Impede que uma data com menos de 1 e maior que 31 seja posta
         }
 
         if (data[1] < 1 || data[1] > 12) {
