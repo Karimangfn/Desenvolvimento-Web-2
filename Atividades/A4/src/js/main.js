@@ -12,7 +12,6 @@ function checkmask() {
             resolve (
                 mascara.forEach(($input) => {
                     const field = $input.dataset.js
-
                     $input.addEventListener('input', (e) => {
                         e.target.value = mask[field](e.target.value)
                     }, false)
@@ -35,7 +34,6 @@ function checkvalid() {
             resolve (
                 validacao.forEach(($input) => {
                     const field = $input.dataset.js
-            
                     $input.addEventListener('input', (e) => {
                         let isValid = valid[field](e.target.value)
                         if (isValid) {
