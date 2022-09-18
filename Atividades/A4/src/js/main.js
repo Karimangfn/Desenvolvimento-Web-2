@@ -55,7 +55,7 @@ function checkvalid() {
 // Executando função da Mascara e da Validação
 async function executar() {
     const checkmaskResponse = await checkmask();
-    const checkInputsResponde = await checkvalid();
+    const checkvalidResponse = await checkvalid();
 }
 
 executar();
