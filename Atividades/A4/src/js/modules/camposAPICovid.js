@@ -1,0 +1,8 @@
+export const $campoUID = document.querySelector('[name="uid"]')
+export const $campoUF = document.querySelector('[name="uf2"]')
+export const $campoEstado = document.querySelector('[name="state"]')
+export const $campoCasos = document.querySelector('[name="cases"]')
+export const $campoMortes = document.querySelector('[name="deaths"]')
+export const $campoSuspeitos = document.querySelector('[name="suspects"]')
+export const $campoRecusas = document.querySelector('[name="refuses"]')
+export const $campoHorario = document.querySelector('[name="datetime"]')
