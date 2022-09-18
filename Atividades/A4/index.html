@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API COVID</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+    <h1>Digite o CEP:</h1>
+    <form>
+        <label for="cep">CEP: </label>
+        <input name="cep" data-js="cep" />
+
+        <div>Estado:<input name="uf" /></div>
+    </form>
+
+    <h1>Dados da Covid:</h1>
+    <form>
+        <div>UID:<input name="uid" /></div>
+        <div>UF:<input name="uf2" /></div>
+        <div>Estado:<input name="state" /></div>
+        <div>Casos:<input name="cases" /></div>
+        <div>Mortes:<input name="deaths" /></div>
+        <div>Suspeitos:<input name="suspects" /></div>
+        <div>Recusas:<input name="refuses" /></div>
+        <div>Horario:<input name="datetime" /></div>
+    </form>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>
