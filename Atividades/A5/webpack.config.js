@@ -25,13 +25,13 @@ module.exports = {
     module: {
         rules: [
             {
-                //test: /\.jsx$/,
+                test: /\.jsx$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
             },
             {
                 //test: /\.css$/,
-                //test: /\.scss$/,
+                test: /\.scss$/,
                 exclude: /node_modules/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             }
