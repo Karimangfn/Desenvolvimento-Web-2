@@ -1,19 +1,13 @@
 import React from 'react';
 import noticiablizzard1 from '../../assets/Imagens - Pagina Inicial/blizzard noticia.jpg'
-import noticiablizzard2 from '../../assets/Imagens - Pagina Inicial/blizzard noticia2.jpg'
-import noticiablizzard3 from '../../assets/Imagens - Pagina Inicial/blizzard noticia3.jpg'
 import noticiacod1 from '../../assets/Imagens - Pagina Inicial/callofduty noticia.jpg'
 import noticiacod2 from '../../assets/Imagens - Pagina Inicial/callofduty noticia2.jpg'
 import noticiacblol1 from '../../assets/Imagens - Pagina Inicial/cblol noticia.jpg'
-import noticiacblol2 from '../../assets/Imagens - Pagina Inicial/cblol noticia2.jpg'
-import noticiacblol3 from '../../assets/Imagens - Pagina Inicial/cblol noticia3.jpg'
 import noticiafrefas1 from '../../assets/Imagens - Pagina Inicial/frefas noticia.jpg'
 import noticiagenshin1 from '../../assets/Imagens - Pagina Inicial/genshin noticia.jpg'
 import noticiacs1 from '../../assets/Imagens - Pagina Inicial/noticia cs.png'
 import noticiaesports from '../../assets/Imagens - Pagina Inicial/noticia E-Sports.jpg'
 import noticiaps51 from '../../assets/Imagens - Pagina Inicial/noticia ps5.jpg'
-import noticiaps52 from '../../assets/Imagens - Pagina Inicial/noticia ps52.jpg'
-import noticiaps53 from '../../assets/Imagens - Pagina Inicial/noticia ps53.jpg'
 import noticiatibia1 from '../../assets/Imagens - Pagina Inicial/noticias tibia.png'
 import noticiawow1 from '../../assets/Imagens - Pagina Inicial/noticias wow.png'
 import noticiapokemon1 from '../../assets/Imagens - Pagina Inicial/pokemon noticia.jpg'
@@ -31,9 +25,7 @@ const Home = () => {
 
             <a class="noticia">
             <Link to="/BlizzardNews">        
-                <img class="crop-1" id="imagem" source src={noticiablizzard1} style={{objectPosition: "50% 0%"}}/>
-                <img class="crop-1" id="imagem" source src={noticiablizzard2} style={{objectPosition: "50% 0%", display: "none"}}/>
-                <img class="crop-1" id="imagem" source src={noticiablizzard3} style={{objectPosition: "50% 0%", display: "none"}}/></Link>    
+                <img class="crop-1" id="imagem" source src={noticiablizzard1} style={{objectPosition: "50% 0%"}}/></Link>    
                 <h3>Funcionários Da Activision Blizzard Organizam Outra Paralisação</h3>
                 <h4>Kariman Gomes - 1 de abril de 2022</h4>
             </a>
@@ -87,9 +79,7 @@ const Home = () => {
             
             <a class="noticia">
             <Link to="/Ps5News">
-                <img class="crop-1" id="imagem2" source src={noticiaps51} style={{objectPosition: "50% 0%"}}/>
-                <img class="crop-1" id="imagem2" source src={noticiaps52} style={{objectPosition: "50% 0%", display: "none"}}/>
-                <img class="crop-1" id="imagem2" source src={noticiaps53} style={{objectPosition: "50% 0%", display: "none"}}/></Link>
+                <img class="crop-1" id="imagem2" source src={noticiaps51} style={{objectPosition: "50% 0%"}}/></Link>
                 <h3>DualSense do PS5 é eleito o melhor controle de todos os tempos!</h3>
                 <h4>Kariman Gomes - 1 de abril de 2022</h4>
             </a>
@@ -141,9 +131,7 @@ const Home = () => {
 
             <a class="noticia">
             <Link to="/CblolNews">
-                <img class="crop-1" id="imagem3" source src={noticiacblol1} style={{objectPosition: "50% 0%"}}/>
-                <img class="crop-1" id="imagem3" source src={noticiacblol2} style={{objectPosition: "50% 0%", display: "none"}}/>
-                <img class="crop-1" id="imagem3" source src={noticiacblol3} style={{objectPosition: "50% 0%", display: "none"}}/></Link>
+                <img class="crop-1" id="imagem3" source src={noticiacblol1} style={{objectPosition: "50% 0%"}}/></Link>
                 <h3>CBLOL 2022 2o split: Veja times, calendários de jogos e como assistir...</h3>
                 <h4>Kariman Gomes - 1 de abril de 2022</h4>
             </a>
