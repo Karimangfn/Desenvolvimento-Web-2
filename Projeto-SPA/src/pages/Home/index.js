@@ -57,7 +57,7 @@ const Home = () => {
             <a class="noticia-small">
                 <div class="col-6">
                 <Link to="/FortniteNews">
-                    <img class="crop-2" source src={noticiafrefas1} style={{objectPosition: "50% 0%"}}/></Link>
+                    <img class="crop-2" source src={noticiafrefas1} style={{objectPosition: "50% 50%"}}/></Link>
                 </div>
                 <div class="col-6">
                     <h3>Dicas de Fortnite</h3>
