@@ -44,9 +44,10 @@ Para acessar os repositórios com os códigos fonte dos projetos, basta clicar n
 - [dev.finace$](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A2)
 - [Formulario](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A3)
 - [API Covid](https://github.com/F3RREIRA/DW2A4/tree/main/Atividades/4A)
-- [Projeto com React - Parte 1](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A5)
-- [Projeto com React - Parte 2](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A6)
+- [Introdução ao React - Parte 1](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A5)
+- [Introdução ao React - Parte 2](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A6)
 - [Testes Unitarios com Jest](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A7)
+- [Projeto Single Page Apllication - Site de Jogos (React)](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Projeto-SPA)
 </p>
 
 
