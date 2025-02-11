@@ -54,6 +54,7 @@ Para acessar os repositórios com os códigos fonte dos projetos, basta clicar n
 
 Basta abrir o arquivo `.html` em um navegador:  
 - **Método 1**: Clique duas vezes no arquivo `.html` para abrir no navegador padrão.  
+
 - **Método 2**: Abra manualmente no navegador:  
   - **Google Chrome / Firefox / Edge**  
     ```bash
