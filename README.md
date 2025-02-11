@@ -44,14 +44,30 @@ Para acessar os repositórios com os códigos fonte dos projetos, basta clicar n
 - [dev.finace$](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A2)
 - [Formulario](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A3)
 - [API Covid](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A4)
-- [Introdução ao React - Parte 1](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A5)
-- [Introdução ao React - Parte 2](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A6)
-- [Testes Unitarios com Jest](https://github.com/Karimangfn/Desenvolvimento-Web-2/tree/main/Atividades/A7)
+- [Introdução ao React - Parte 1](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A5)
+- [Introdução ao React - Parte 2](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A6)
+- [Testes Unitarios com Jest](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Atividades/A7)
 - [Projeto Single Page Application - Site de Jogos (React)](https://github.com/Karimangfn/Desenvolvimento-Web-II-IFSP/tree/main/Projeto-SPA)
 </p>
 
+## ▶️ Como Executar Arquivos Web (HTML, CSS, JS)
 
-
+Basta abrir o arquivo `.html` em um navegador:  
+- **Método 1**: Clique duas vezes no arquivo `.html` para abrir no navegador padrão.  
+- **Método 2**: Abra manualmente no navegador:  
+  - **Google Chrome / Firefox / Edge**  
+    ```bash
+    Arraste e solte o arquivo na janela do navegador
+    ```
+  - **Ou abra pelo terminal (Linux/macOS)**:  
+    ```bash
+    xdg-open index.html
+    ```
+  - **No Windows (cmd/powershell)**:  
+    ```powershell
+    start index.html
+    ```
+    
 ## 🚀 Tecnologias
 
 Os projetos foram desenvolvidos utilizando as seguintes tecnologias:
