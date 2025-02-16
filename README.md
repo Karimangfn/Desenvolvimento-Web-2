@@ -18,7 +18,7 @@
 
 ## 🗃️ Repositório
 
-Esse repositório, apresenta os trabalhos desenvolvidos dentro da disciplina de Desenvolvimento WEB II, do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS), no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.
+Esse repositório, apresenta os trabalhos desenvolvidos dentro da disciplina de Desenvolvimento Web II, do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS), no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.
 
 ## 🏫 IFSP
 
